@@ -27,4 +27,16 @@ sleep 0.1
 print ">  "
 
 answer = gets.chomp.to_i
-puts "So you're #{answer} years old?"
+puts "So you are #{answer} years old?"
+sleep 1
+if answer <= 17
+  puts "Well you're old enough to eat pizza and drink soda, and thats about it."
+elsif answer >= 18 && answer <= 20
+  puts "Ok. Looks like you can vote and smoke cigs."
+elsif answer >= 21 && answer <= 24
+  puts "Congrats, you're old enough to drink. Oh and it looks like you can vote and smoke cigs."
+elsif answer >= 25
+  puts "Well look at you! You're old enough to rent a car. You can also drink, vote and smoke as well, you just can't drive that rental car while doing all of those."
+elsif
+  puts "You ain't making sense."
+end
